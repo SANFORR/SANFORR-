@@ -7,7 +7,7 @@ public class Student {
 
 
 		class Faculty<String> {
-			String Ime;
+			String name;
 		}
 
 		
@@ -20,12 +20,12 @@ public class Student {
 		}
 
 		public double getAverage() {
-			int zbir = 0;
+			int sum = 0;
 			for(int i=0 ; i<grades.length ; i++
 			{
-				zbir += grades[i];	
+				sum += grades[i];	
 			}
-			return (double) zbir/grades.length;
+			return (double) sum/grades.length;
 
 		}
 
@@ -63,14 +63,14 @@ public class Student {
 		}
 
 		public int ECTSCredits() {
-			int krediti = 0;
+			int credits = 0;
 			for(int i=0 ; i<grades.length ; i++
 			{
 				if(grades[i] > 5 )
 				{
-					krediti += 6;
+					credits += 6;
 				}	
 			}
-			return krediti;
+			return credits;
 			//TODO
 		}
